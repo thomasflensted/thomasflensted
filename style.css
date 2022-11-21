@@ -122,6 +122,30 @@ a {
 
 /* expressions page styling */
 
+.expressions-grid-container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    width: 55%;
+    margin: auto;
+    gap: 20px;
+}
+
+.grid-block1 {
+    font-size: 3rem;
+    color: white;
+    background: blue;
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+}
+.grid-block2 {
+    font-size: 3rem;
+    color: white;
+    background: red;
+    height: 300px;
+    border-radius: 20px;
+}
+
 .big-title {
     display: flex;
     justify-content: center;
@@ -133,7 +157,8 @@ a {
     font-family: verveine, sans-serif;
 }
 
-.back > .nav-link {
+.back-text {
+    display: inline;
     font-size: 2.5rem;
 }
 
