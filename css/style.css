@@ -193,7 +193,7 @@ a {
     font-size: 8rem;
     justify-content: center;
     margin: 5rem auto 8rem auto;
-    max-width: 70%;
+    max-width: 90%;
     text-align: center;
 }
 
@@ -207,6 +207,7 @@ a {
     font-size: 1.5rem;
     line-height: 3rem;
     margin-top: 1rem;
+    text-align: justify;
 }
 
 .back {
@@ -233,7 +234,7 @@ a {
 
 /* media queries */
 
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1300px) {
 
     .grid-container {
         grid-template-columns: repeat(3, 200px);
@@ -273,6 +274,10 @@ a {
     .tool-header {
         width: 80%;
     }
+
+    .expressions-heading {
+        font-size: 5rem;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -289,6 +294,10 @@ a {
 
     .expressions-img>img {
         width: 250px;
+    }
+
+    .expressions-heading {
+        font-size: 4rem;
     }
 }
 

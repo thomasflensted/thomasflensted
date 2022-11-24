@@ -25,37 +25,48 @@
 
             <div class="expressions-grid-container">
                 <div class="expressions-img">
-                    <img src="images/TEST.gif" alt="">
+                    <img src="images/expressions.gif" alt="">
                 </div>
                 <div class="expressions-content">
                     <h2 class="expressions-title">What are Expressions?</h2>
-                    <p class="expressions-desc">Expressions are essentially snippets
-                        of JavaScript code that you can use for
-                        various purposes in After Effects. You can use it to
-                        automate workflows, you can use it take make
-                        sure elements in your comp are placed in the right places,
-                        or you can use it to drive animations
-                        from few or no keyframes. The latter makes it significantly
-                        easier to hand off projects to other
-                        people or to go back and retime your animations. Finally,
-                        you can use it to create responsive motion
-                        graphics templates that can be used in Premiere Pro without
-                        the need to open up After Effects.</p>
+                    <p class="expressions-desc">Expressions are essentially snippets of JavaScript code that you can use
+                        for various purposes in After Effects. You can use it automate workflows, you can use it take
+                        make sure elements in your comp are placed in the right places, or you can use it to drive
+                        animations from few or no keyframes. The latter makes it significantly easier to hand off
+                        projects to other people or to go back and retime your animations. Finally, you can use it to
+                        create responsive motion graphics templates that can be used in Premiere Pro without the need to
+                        open up After Effects.</p>
+                </div>
+            </div>
+
+            <div class="expressions-grid-container">
+                <div class="expressions-content">
+                    <h2 class="expressions-title">Variables</h2>
+                    <p class="expressions-desc">Variables are esentially containers that can hold any data type (more on
+                        that
+                        in a second). For now, it is important to note that a variable is a way to store a value. Just
+                        like when you did math with letters back in high school. If you have an equation of a + 1 = 4,
+                        then the a stores the value 3. The way you assign a value to a variable is simply by typing the
+                        name you want your variable to have, followed by an equals sign, followed by the value you want
+                        your variable to hold. Example: a = 2 or b = 'text'. The reason variables are important is that
+                        you often use the same value multiple times, and so if you want to change the value later you
+                        only have to do it in once place. Additionally, your code will be much more readable if you give
+                        your variables descriptive names.</p>
+                </div>
+                <div class="expressions-img">
+                    <img src="images/TEST.gif" alt="">
                 </div>
             </div>
 
             <div class="expressions-grid-container">
                 <div class="expressions-content">
                     <h2 class="expressions-title">Data Types</h2>
-                    <p class="expressions-desc">Lorem ipsum dolor sit,
-                        amet consectetur adipisicing elit. Quod
-                        asperiores veniam quis fugiat vel aliquam aperiam nulla,
-                        voluptatibus voluptatem architecto iusto
-                        maxime tempore, ipsum sapiente quia. Laboriosam numquam
-                        officiis fugiat minus. Dignissimos possimus
-                        excepturi recusandae sunt repellat autem corrupti cum
-                        quisquam ad? Soluta nulla explicabo nostrum
-                        earum doloribus odit iusto. Lorem ipsum dolor sit.</p>
+                    <p class="expressions-desc">There are essentially three types of data in After Effects. There are
+                        more advanced ones as well, but they are too complicated for now, and they are mostly based
+                        on the ones being presented here anyway. The three main ones you need to now are numbers,
+                        strings and arrays. Different After Effects properties (e.g. position or opacity) take different
+                        - or "understand" - different data types, so it's crucial to know the difference between them,
+                        and how to type them out.</p>
                 </div>
                 <div class="expressions-img">
                     <img src="images/data-types.gif" alt="">
@@ -68,30 +79,27 @@
                 </div>
                 <div class="expressions-content">
                     <h2 class="expressions-title">Numbers</h2>
-                    <p class="expressions-desc">Lorem ipsum dolor sit,
-                        amet consectetur adipisicing elit. Quod
-                        asperiores veniam quis fugiat vel aliquam aperiam nulla,
-                        voluptatibus voluptatem architecto iusto
-                        maxime tempore, ipsum sapiente quia. Laboriosam numquam
-                        officiis fugiat minus. Dignissimos possimus
-                        excepturi recusandae sunt repellat autem corrupti cum
-                        quisquam ad? Soluta nulla explicabo nostrum
-                        earum doloribus odit iusto. Lorem ipsum dolor sit.</p>
+                    <p class="expressions-desc">Numbers are exactly what they sound like: Just numbers. Numbers can come
+                        in many forms: Integers (maybe you know it as a whole number), floating point numbers (you
+                        probably know it as a decimal), and negative numbers (i.e. numbers below zero). Try opening
+                        typing an expression on the rotation or opacity properties and simply type a number. When you
+                        click away, you will see that the property's value is now driven by whatever value you typed.
+                        Note: Opacity defaults to 0 or 100 if you type values out of that range. Because opacity is a
+                        percentage, it cannot be below 0 or above 100. Try playing around with different numbers in the
+                        expressions field. Notice that you can do math directly within the field.</p>
                 </div>
             </div>
 
             <div class="expressions-grid-container">
                 <div class="expressions-content">
                     <h2 class="expressions-title">Strings</h2>
-                    <p class="expressions-desc">Lorem ipsum dolor sit,
-                        amet consectetur adipisicing elit. Quod
-                        asperiores veniam quis fugiat vel aliquam aperiam nulla,
-                        voluptatibus voluptatem architecto iusto
-                        maxime tempore, ipsum sapiente quia. Laboriosam numquam
-                        officiis fugiat minus. Dignissimos possimus
-                        excepturi recusandae sunt repellat autem corrupti cum
-                        quisquam ad? Soluta nulla explicabo nostrum
-                        earum doloribus odit iusto. Lorem ipsum dolor sit.</p>
+                    <p class="expressions-desc">A string is a fancy programmer word for text. Strings can be anything as
+                        long as it is encapsulated in single or double quotes. Therefore, if you type a number, but
+                        surround it with quotes, it is <i>technically</i> not a number, but a string. A string can also
+                        include spaces, commas, percentage signs; anything on your keyboard. The main property
+                        that takes a string as input, is the Source Text property. The Source Text parameter can also
+                        take numbers as input. Try adding an expression to Source Text and play around with it. Maybe
+                        see what happens if you add together two string with a plus sign.</p>
                 </div>
                 <div class="expressions-img">
                     <img src="images/strings.gif" alt="">
@@ -104,95 +112,76 @@
                 </div>
                 <div class="expressions-content">
                     <h2 class="expressions-title">Arrays</h2>
-                    <p class="expressions-desc">Lorem ipsum dolor sit,
-                        amet consectetur adipisicing elit. Quod
-                        asperiores veniam quis fugiat vel aliquam aperiam nulla,
-                        voluptatibus voluptatem architecto iusto
-                        maxime tempore, ipsum sapiente quia. Laboriosam numquam
-                        officiis fugiat minus. Dignissimos possimus
-                        excepturi recusandae sunt repellat autem corrupti cum
-                        quisquam ad? Soluta nulla explicabo nostrum
-                        earum doloribus odit iusto. Lorem ipsum dolor sit.</p>
+                    <p class="expressions-desc">Arrays are the most complicated of the three data types here. See an
+                        array as a list of data. Arrays can hold all types of data - you can even have an array of
+                        arrays. To create an array, just surround your data with square brackets and separate elements
+                        in the array with commas, like this for instance: [1, 2, 'text']. As you can see, the elements
+                        of an array doesn't have to be of the same data type. The way to access an element in an array
+                        is by putting the <i>index</i> of the element you want to access in square brackets after the
+                        name of your array. Note that in programming, numbering always starts at 0, not 1. So if I have
+                        an array with two strings <i>myArray = ['some', 'text']</i> I can access the first
+                        value ('some') with myArray[0] and the second value ('text') with myArray[1]. Try opening up the
+                        Source Text and play around with arrays. Create different arrays with differnet data types and
+                        see if you can get After Effects to show specific values on the screen.
+                    </div>
+                </div>
+
+                <div class="expressions-grid-container">
+                    <div class="expressions-img">
+                        <img src="images/TEST.gif" alt="">
+                    </div>
+                    <div class="expressions-content">
+                        <h2 class="expressions-title">Expression Controls</h2>
+                        <p class="expressions-desc">Lorem ipsum dolor sit, amet
+                            consectetur adipisicing elit. Quod
+                            asperiores
+                            veniam quis fugiat vel aliquam aperiam nulla, voluptatibus
+                            voluptatem architecto iusto maxime
+                            tempore, ipsum sapiente quia. Laboriosam numquam officiis
+                            fugiat minus. Dignissimos possimus
+                            excepturi recusandae sunt repellat autem corrupti cum
+                            quisquam ad? Soluta nulla explicabo nostrum
+                            earum doloribus odit iusto. Lorem ipsum dolor sit.</p>
+                    </div>
+                </div>
+
+                <div class="expressions-grid-container">
+                    <div class="expressions-content">
+                        <h2 class="expressions-title">Functions</h2>
+                        <p class="expressions-desc">Lorem ipsum dolor sit, amet
+                            consectetur adipisicing elit. Quod
+                            asperiores
+                            veniam quis fugiat vel aliquam aperiam nulla, voluptatibus
+                            voluptatem architecto iusto maxime
+                            tempore, ipsum sapiente quia. Laboriosam numquam officiis
+                            fugiat minus. Dignissimos possimus
+                            excepturi recusandae sunt repellat autem corrupti cum
+                            quisquam ad? Soluta nulla explicabo nostrum
+                            earum doloribus odit iusto. Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="expressions-img">
+                        <img src="images/TEST.gif" alt="">
+                    </div>
+                </div>
+
+                <div class="expressions-grid-container">
+                    <div class="expressions-img">
+                        <img src="images/TEST.gif" alt="">
+                    </div>
+                    <div class="expressions-content">
+                        <h2 class="expressions-title">Accessing Properties</h2>
+                        <p class="expressions-desc">Lorem ipsum dolor sit, amet
+                            consectetur adipisicing elit. Quod
+                            asperiores
+                            veniam quis fugiat vel aliquam aperiam nulla, voluptatibus
+                            voluptatem architecto iusto maxime
+                            tempore, ipsum sapiente quia. Laboriosam numquam officiis
+                            fugiat minus. Dignissimos possimus
+                            excepturi recusandae sunt repellat autem corrupti cum
+                            quisquam ad? Soluta nulla explicabo nostrum
+                            earum doloribus odit iusto. Lorem ipsum dolor sit.</p>
+                    </div>
                 </div>
             </div>
-
-            <div class="expressions-grid-container">
-                <div class="expressions-content">
-                    <h2 class="expressions-title">Variables</h2>
-                    <p class="expressions-desc">Lorem ipsum dolor sit,
-                        amet consectetur adipisicing elit. Quod
-                        asperiores
-                        veniam quis fugiat vel aliquam aperiam nulla, voluptatibus
-                        voluptatem architecto iusto maxime
-                        tempore, ipsum sapiente quia. Laboriosam numquam officiis
-                        fugiat minus. Dignissimos possimus
-                        excepturi recusandae sunt repellat autem corrupti cum
-                        quisquam ad? Soluta nulla explicabo nostrum
-                        earum doloribus odit iusto. Lorem ipsum dolor sit.</p>
-                </div>
-                <div class="expressions-img">
-                    <img src="images/TEST.gif" alt="">
-                </div>
-            </div>
-
-            <div class="expressions-grid-container">
-                <div class="expressions-img">
-                    <img src="images/TEST.gif" alt="">
-                </div>
-                <div class="expressions-content">
-                    <h2 class="expressions-title">Expression Controls</h2>
-                    <p class="expressions-desc">Lorem ipsum dolor sit, amet
-                        consectetur adipisicing elit. Quod
-                        asperiores
-                        veniam quis fugiat vel aliquam aperiam nulla, voluptatibus
-                        voluptatem architecto iusto maxime
-                        tempore, ipsum sapiente quia. Laboriosam numquam officiis
-                        fugiat minus. Dignissimos possimus
-                        excepturi recusandae sunt repellat autem corrupti cum
-                        quisquam ad? Soluta nulla explicabo nostrum
-                        earum doloribus odit iusto. Lorem ipsum dolor sit.</p>
-                </div>
-            </div>
-
-            <div class="expressions-grid-container">
-                <div class="expressions-content">
-                    <h2 class="expressions-title">Functions</h2>
-                    <p class="expressions-desc">Lorem ipsum dolor sit, amet
-                        consectetur adipisicing elit. Quod
-                        asperiores
-                        veniam quis fugiat vel aliquam aperiam nulla, voluptatibus
-                        voluptatem architecto iusto maxime
-                        tempore, ipsum sapiente quia. Laboriosam numquam officiis
-                        fugiat minus. Dignissimos possimus
-                        excepturi recusandae sunt repellat autem corrupti cum
-                        quisquam ad? Soluta nulla explicabo nostrum
-                        earum doloribus odit iusto. Lorem ipsum dolor sit.</p>
-                </div>
-                <div class="expressions-img">
-                    <img src="images/TEST.gif" alt="">
-                </div>
-            </div>
-
-            <div class="expressions-grid-container">
-                <div class="expressions-img">
-                    <img src="images/TEST.gif" alt="">
-                </div>
-                <div class="expressions-content">
-                    <h2 class="expressions-title">Accessing Properties</h2>
-                    <p class="expressions-desc">Lorem ipsum dolor sit, amet
-                        consectetur adipisicing elit. Quod
-                        asperiores
-                        veniam quis fugiat vel aliquam aperiam nulla, voluptatibus
-                        voluptatem architecto iusto maxime
-                        tempore, ipsum sapiente quia. Laboriosam numquam officiis
-                        fugiat minus. Dignissimos possimus
-                        excepturi recusandae sunt repellat autem corrupti cum
-                        quisquam ad? Soluta nulla explicabo nostrum
-                        earum doloribus odit iusto. Lorem ipsum dolor sit.</p>
-                </div>
-            </div>
-
-        </div>
-
-    </body>
-</html>
+        </body>
+    </html>
