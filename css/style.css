@@ -77,11 +77,12 @@ a {
 .about-block {
     align-items: center;
     display: block;
-    font-size: 6rem;
+    font-size: 3rem;
     height: 100vh;
-    line-height: 7rem;
+    line-height: 5rem;
     margin: 10rem auto;
-    text-align: left;
+    text-align: justify;
+    text-align-last: left;
     width: 80%;
 }
 
@@ -138,6 +139,18 @@ a {
 /* expressions page styling */
 
 .expressions-grid-container {
+    text-align: justify;
+}
+
+.expressions-grid-container:nth-child(even) {
+    text-align-last: right;
+}
+
+.expressions-grid-container:nth-child(odd) {
+    text-align: left;
+}
+
+.expressions-grid-container {
     align-items: center;
     border-radius: 20px;
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
@@ -145,7 +158,7 @@ a {
     gap: 20px;
     grid-template-columns: auto 1fr;
     margin: 0 auto 8rem auto;
-    max-width: 45%;
+    max-width: 60%;
     padding: 3.5rem;
     transition: transform 0.5s ease;
 }
@@ -159,6 +172,9 @@ a {
 }
 
 .expressions-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 20px;
     font-size: 3rem;
     width: 300px;
@@ -191,11 +207,6 @@ a {
     font-size: 1.5rem;
     line-height: 3rem;
     margin-top: 1rem;
-    text-align: justify;
-}
-
-.desc-left {
-    text-align-last: right;
 }
 
 .back {
@@ -223,6 +234,7 @@ a {
 /* media queries */
 
 @media screen and (max-width: 1500px) {
+
     .grid-container {
         grid-template-columns: repeat(3, 200px);
         margin-top: 6rem;
@@ -234,16 +246,20 @@ a {
 
     .expressions-grid-container {
         grid-template-columns: 1fr;
-        text-align: center;
+        padding-bottom: 1rem;
     }
 
-    .desc-left {
+    .expressions-desc,
+    .expressions-title {
         text-align: center;
+        text-align-last: center;
     }
 
     .expressions-img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
         margin: auto;
-        width: 300px;
     }
 
 }
@@ -269,6 +285,10 @@ a {
         font-size: 1.1rem;
         height: 175px;
         width: 175px;
+    }
+
+    .expressions-img>img {
+        width: 250px;
     }
 }
 
