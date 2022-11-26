@@ -215,6 +215,7 @@ a {
 
 .back {
     font-family: verveine, sans-serif;
+    position: fixed;
 }
 
 .back-text {
