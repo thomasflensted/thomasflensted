@@ -19,6 +19,20 @@ a {
     text-decoration: none;
 }
 
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    width: 25px;
+    margin-right: 3rem;
+}
+
+.social:hover {
+    cursor: pointer;
+}
+
 .justify {
     text-align: justify;
 }
@@ -55,13 +69,13 @@ a {
 .text-block {
     align-items: center;
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     justify-content: center;
     line-height: 2.5rem;
     margin-bottom: 3rem;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 5rem;
+    margin-top: 3rem;
     text-align: center;
     width: 50%;
 }
@@ -77,9 +91,8 @@ a {
     align-items: center;
     display: block;
     font-size: 3rem;
-    height: 100vh;
     line-height: 5rem;
-    margin: 10rem auto;
+    margin: 10rem auto 5rem;
     text-align: justify;
     text-align-last: left;
     width: 80%;
@@ -91,9 +104,10 @@ a {
 .grid-container {
     display: grid;
     gap: 40px;
-    grid-template-columns: repeat(4, 200px);
+    grid-template-columns: repeat(4, 175px);
     justify-content: center;
     margin-top: 6rem;
+    margin-bottom: 6rem;
 }
 
 .tool-link-container {
@@ -113,11 +127,11 @@ a {
     box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.08);
     box-sizing: border-box;
     display: flex;
-    font-size: 1.3rem;
-    height: 200px;
-    padding: 25px;
+    font-size: 1.2rem;
+    height: 175px;
+    padding: 25px 20px;
     text-align: center;
-    width: 200px;
+    width: 175px;
 }
 
 .tool-heading {
